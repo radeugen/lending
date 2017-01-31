@@ -1,0 +1,34 @@
+.cupcake .container::after {
+  content: '';
+  display: block;
+  clear: both; }
+
+.cupcake {
+  background: #df4044 radial-gradient(at left bottom, #db3c41, #a4161c); }
+
+.header {
+  width: auto;
+  box-sizing: border-box;
+  margin-top: 1.25rem;
+  border: 1px solid black;
+  min-height: 3.125rem; }
+
+.logo {
+  float: left;
+  width: 17.6875rem;
+  border: 1px solid blue; }
+
+.logo__img {
+  width: 17.6875rem; }
+
+.navigation {
+  float: left;
+  width: 40rem;
+  border: 1px solid green; }
+
+.user-block {
+  float: right;
+  width: 9.0625rem;
+  border: 1px solid yellow; }
+
+/*# sourceMappingURL=cupcake.css.map */

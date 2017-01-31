@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Malina';
+    src: url('../fonts/malina-webfont.woff2') format('woff2'),
+        url('../fonts/malina-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@import '_misc/normalize.scss';
+@import '_misc/adjustment.scss';
+
+@import 'sections/cupcake.scss';

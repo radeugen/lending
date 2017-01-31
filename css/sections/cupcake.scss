@@ -1,0 +1,211 @@
+@import '../_misc/mixin.scss';
+
+.cupcake {
+    background: #df4044 radial-gradient(at left bottom, #db3c41, #a4161c) ;
+    color: $white;
+    
+}
+
+
+.header {
+    @extend %clearfix;
+    width: auto;
+    box-sizing: border-box;
+    margin-top: rem(20px);
+    margin-bottom: rem(80px);
+}
+
+.logo {
+   float: left;
+    width: rem(283px);
+}
+
+.logo__img {
+    width: 100%;
+}
+
+.navigation {
+    float: left;
+    width: rem(640px);
+    text-align: right;
+    padding: rem(23px) rem(25px);
+    
+}
+
+.navigation__list {
+    @extend %nulled;
+    list-style: none;
+}
+
+.navigation__item {
+    @include inlineblock(top);
+    margin-left: rem(60px);
+    
+    &:first-child {
+        margin-left: 0;
+    }
+}
+
+.navigation_link {
+    color: $white;
+    text-decoration: none;
+    
+    &:visited {
+        text-decoration: none;
+        color: $white;
+    }
+    
+    &:hover {
+        text-decoration: none;
+        color: $yellow;
+    }
+    
+    
+    &:active {
+        text-decoration: none;
+        color: $white;
+    }
+}
+
+.user-block {
+    float: right;
+    width: rem(145px);
+    padding: rem(10px) rem(10px);
+    text-align: center;
+    
+}
+
+.user-block__item {
+    @include inlineblock(middle);
+    width: rem(42px);
+    height: rem(42px);
+    
+    margin-left: rem(25px);
+
+    &:first-child {
+        margin-left: 0;
+    }
+}
+
+.user-block__item_user {
+    text-indent: -9999px;
+    background: 
+        url('/img/icon/user.png') center center no-repeat,
+        url('/img/icon/round_icon_bg.png') center center no-repeat;
+        
+}
+
+.user-block__item_search {
+    text-indent: -9999px;
+    background: 
+        url('/img/icon/search.png') center center no-repeat,
+        url('/img/icon/round_icon_bg.png') center center no-repeat;
+
+}
+
+.cupcake-content {
+    @extend %clearfix;
+}
+
+.cupcake-content__left {
+    float: left;
+    width: rem(620px);
+    position: relative;
+}
+
+.cupcake-content__img {
+    width: rem(420px);
+    margin-left: rem(200px);
+}
+
+.cupcake-content__img-item {
+    width: 100%;
+}
+
+.cupcake-content__ing {
+    position: absolute;
+    top: rem(65px);
+    left: rem(20px);
+    text-align: center;
+}
+
+.ing-icon {
+    display: inline-block;
+    width: rem(42px);
+    height: rem(42px);
+    margin-bottom: rem(8px);
+    background: 
+        url('/img/icon/ing.png') center center no-repeat,
+        url('/img/icon/round_icon_bg.png') center center no-repeat;
+}
+
+.cupcake-content__safe {
+    position: absolute;
+    top: rem(340px);
+    left: rem(20px);
+    text-align: center;
+}
+
+.safe-text {
+    opacity: .28;
+}
+
+.safe-hour {
+    font-family: 'Malina';
+    font-size: rem(24px);
+}
+
+.cupcake-content__right {
+    float: right;
+    width: rem(415px);
+}
+
+.cupcake-content__title {
+    font-family: 'Malina';
+    font-size: rem(62px);
+    line-height: rem(70px);
+    margin-bottom: rem(30px);
+}
+
+.cupcake-content__desc {
+    font-size: rem(15px);
+    text-align: left;
+    margin-bottom: rem(50px);
+}
+
+.cupcake-content__price {
+    @include inlineblock(middle);
+    width: 49%;
+    font-family: 'Malina';
+    font-size: rem(62px);
+    line-height: rem(62px);
+    
+    &:after {
+        content: "₴";
+        margin-left: rem(10px);
+        font-size: rem(52px);
+    }
+}
+
+.cupcake-content__order-btn {
+    @include inlineblock(middle);
+    width: 49%;
+    
+}
+
+.order-btn {
+    width: rem(110px);
+}
+
+.order-btn__link {
+    display: block;
+    border: 2px solid transparent;
+    background: $yellow;
+    font-size: rem(14px);
+    font-weight: bold;
+    padding: rem(10px) rem(20px);
+    color: $red;
+    @include border-radius(rem(20px));
+}
+
+
